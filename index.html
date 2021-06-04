@@ -6,17 +6,23 @@
     <script src="Javascript/validaCep.js"></script>
     <script src="Javascript/alert.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+<!-- Título da página (aparece na aba) -->
     <title>DESAFIO ITAÚ 2</title>    
 </head>
 
 <body>
+<!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
     <div>
         <h1 id="titulo">CADASTRO PESSOAL</h1>
         <p id="subtitulo">Complete suas Informações</p>
         <br>
     </div>
     <div>
+ <!-- Início do formulário -->
         <form>
+ <!-- Campos com itens nome, cpf, rg,  sexo (Campo de desenvolvimento web com 2 opções de botões selecionáveis (radio button),cep (com validação e preenchimento
+ automático dos campos referentes a endereço, bairro, cidade e estado)telefone fixo, telefone celular e email (com validação em formato de e-mail @)" -->
             <label><strong>Nome Completo:</strong></label>
             <input size="50" maxlength="40" name="nome" type="text" id="nome" required>
             <nav></nav>
@@ -75,11 +81,16 @@
                         <br>
                         <label><strong>Email:</strong></label>
                         <input size="30" maxlength="28" name="email" type="email" id="email" size="11" />                        
-                        <input type="submit" value="Enviar" onclick="checkForm()" class="botao" />
+                        
+<!-- Botão para enviar o formulário(com validação doa dados enviados com 2 alertas). O primeiro alerta avisa que o usuário deve preencher os campos 
+obrigatórios. O segundo alerta avisa após o preenchimento e envio das informações a url que os dados foram enviados com sucesso  -->
+        <input type="submit" value="Enviar" onclick="checkForm()" class="botao" />
                         <br>
         </form>
     </div>
-    <footer class="rodape-pagina">
+    
+<!-- Rodapé e imagens Logo Gama Academy e Itaú -->     
+      <footer class="rodape-pagina">
         &copy; Aliny Marcelino
         <img width="5%" src="IMAGENS/gama.png">
         <img width="3%" src="IMAGENS/itau.jpg">
