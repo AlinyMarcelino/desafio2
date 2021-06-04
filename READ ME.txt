@@ -1,4 +1,4 @@
-Foram feitos comentários no arquivo index.html no github. A grafia em cinza claro no arquivo são os comentários referentes as funcionalidades do código.
+Foram feitos comentários no arquivo index.html e stylesheet.css no github. A grafia em cinza claro nos arquivos são os comentários referentes as funcionalidades dos códigos.
 
 Organizei os dados em pastas específicas de arquivos e linguagens.
 Os dados preenchidos provavelmente estão indo via URL pelo método post.
