@@ -1,24 +1,29 @@
+/* Todos os elementos da página */
 *{
     margin: 0;
     padding: 0;
 }
 
+/* Elementos com o ID "titulo" */
 #titulo{
     font-family: sans-serif;
     color: #380861;
     margin-left: 7%;
 }
 
+/* Elementos com o ID "subtitulo" */
 #subtitulo{
     font-family: sans-serif;
     color: #380861;
     margin-left: 10%;
 }
 
+/* Elementos de tag <fieldset>*/
 fieldset{
     border: 0;
 }
 
+/* Elemento de tag <body> */
 body{
     background-color: #F0F8FF;
     font-family: sans-serif;
@@ -29,6 +34,7 @@ body{
     justify-content: center;
 }
 
+/* Elementos de classe botão e de tag <select> */
 input, button {
     border-radius: 5px;
 }
@@ -43,6 +49,7 @@ input, button {
     display: block; 
 }
 
+/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
 fieldset.grupo .campo{
     float: left;
     margin-right: 1em;
@@ -54,11 +61,12 @@ fieldset.grupo .campo{
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     display: block;
 }
-
+/* Elemento de classe "campo" */
 .campo input:focus{
     background: #E0E0F8;
 }
-    
+
+/* Elemento de classe "botao" */
 .botao {
     font-size: 1.2em;
     background: #59429d;
@@ -75,12 +83,13 @@ fieldset.grupo .campo{
     transform: translate(-50%,-50%);
 }
 
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
 .botao:hover {
     background: #ccbbff;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
 }
-
+/* Elemento rodapé */
 .rodape-pagina {
     background-image: radial-gradient(ellipse at bottom left, rgba(60, 29, 61, 0.8), 
 
