@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css" media="">
+    <script src="Javascript/validaCPF.js"></script>
+    <script src="Javascript/validaCep.js"></script>
+    <script src="Javascript/alert.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DESAFIO ITAÚ 2</title>    
+</head>
+
+<body>
+    <div>
+        <h1 id="titulo">CADASTRO PESSOAL</h1>
+        <p id="subtitulo">Complete suas Informações</p>
+        <br>
+    </div>
+    <div>
+        <form>
+            <label><strong>Nome Completo:</strong></label>
+            <input size="50" maxlength="40" name="nome" type="text" id="nome" required>
+            <nav></nav>
+                <br>
+                <label id="cpflabel"><strong>CPF:</strong></label>
+                <input size="15" maxlength="16" name="cpf" type="text" id="cpf" required value=""
+                    onblur="TestaCPF(this.value)">
+                <nav>
+                    <br>
+                    <label><strong>RG:</strong></label>
+                    <input size="12" maxlength="13" name="rg" type="text" id="rg">
+                    <br>
+                    <br>
+                    <label><strong>Sexo:</strong></label>
+                    <input type="radio" name="sexof" value="F" id="sexof">Feminino
+                    <input type="radio" name="sexm" value="M" id="sexom">Masculino
+                   
+                    <nav>
+                        <br>
+                        <label><strong>Cep:</strong></label>
+                        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                            onblur="pesquisacep(this.value);" />
+                        <br>
+                        <br>
+                        <label><strong>Endereço:</strong></label>
+                        <input name="endereço" type="text" id="endereço" size="60" required />
+                        <br>
+                        <br>
+                        <label><strong>Número:</strong></label>
+                        <input name="numero" type="text" id="numero" size="10" required />
+                        <br>
+                        <br>
+                        <label><strong>Complemento:</strong></label>
+                        <input name="complemento" type=text id="complemento" size="60" />
+                            <br>
+                            <br>
+                            <label><strong>Bairro:</strong></label>
+                            <input name="bairro" type="text" id="bairro" size="40" />
+                        <br>
+                        <br>
+                        <label><strong>Cidade:</strong></label>
+                        <input name="cidade" type="text" id="cidade" size="40" />
+                        <br>
+                        <br>
+                        <label><strong>Estado:</strong></label>
+                        <input name="uf" type="text" id="uf" size="2" />
+                        <br>
+                        <br>
+                        <label><strong>Telefone Fixo:</strong></label>
+                        <input name="fixo" type="text" id="fixo" size="10" /> 
+                        <br>
+                        <br>
+                        <label><strong>Telefone Celular:</strong></label>
+                        <input name="celular" type="text" id="celular" size="11" required /> <br />
+                        
+                        <br>
+                        <label><strong>Email:</strong></label>
+                        <input size="30" maxlength="28" name="email" type="email" id="email" size="11" />                        
+                        <input type="submit" value="Enviar" onclick="checkForm()" class="botao" />
+                        <br>
+        </form>
+    </div>
+    <footer class="rodape-pagina">
+        &copy; Aliny Marcelino
+        <img width="5%" src="IMAGENS/gama.png">
+        <img width="3%" src="IMAGENS/itau.jpg">
+
+    </footer>
+</body>
+
+</html>
